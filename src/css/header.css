@@ -50,7 +50,7 @@
   right: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: absolute;
   min-width: 280px;
 }
@@ -76,6 +76,7 @@
   padding: 0;
   height: 32px;
   fill: #fff;
+  margin-left: 135px;
 }
 
 .header-navigation {
@@ -91,6 +92,7 @@
     top: 42px;
     left: 32px;
     right: 32px;
+    min-width: 704px;
   }
 
   .header-logo {
@@ -102,15 +104,25 @@
     width: 40px;
     height: 40px;
   }
+
+  .header-burger-btn {
+    margin-left: 448px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .header {
     left: 100px;
     right: 100px;
+    min-width: 1080px;
+    justify-content: center;
   }
 
   .header-burger {
+    display: none;
+  }
+
+  .header-burger-btn {
     display: none;
   }
 
