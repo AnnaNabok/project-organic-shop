@@ -91,7 +91,7 @@
   }
   .organic-item {
     padding: 32px 30px;
-    max-width: 280px;
+    max-width: 340px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -100,7 +100,7 @@
   }
   .organic-item {
     padding: 32px 32px;
-    max-width: 280px;
+    max-width: 344px;
   }
   .organic-list {
     max-width: 1080px;
