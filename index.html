@@ -12,20 +12,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/project-organic-shop/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-organic-shop/assets/index-DmzP06NQ.css">
+    <link rel="stylesheet" crossorigin href="/project-organic-shop/assets/index-TMFrqqnJ.css">
   </head>
   <body>
     <header class="header">
-  <a href="." class="header-logo-link">
+  <div class="container">
+  <a href="/index.html" class="header-logo-link">
     <svg class="header-logo">
       <use class="header-logo-vector" href="/project-organic-shop/assets/sprite-BXPgZ1d3.svg#header-logo"></use>
     </svg>
   </a>
-  <button type="button" class="header-burger-btn">
+  <button type="button" class="header-burger-btn" mobile-menu-open>
     <svg class="header-burger">
       <use
         class="header-burger-vector"
@@ -47,6 +48,22 @@
     </ul>
   </div>
   <button class="header-btn" data-modal-open>Shop now</button>
+  <div class="mobile-menu" mobile-menu>
+    <div class="mobile-menu-container">
+      <button class="mobile-close-btn" type="button" mobile-menu-close>
+        <svg class="mobile-close-icon" width="20" height="20">
+          <use href="/project-organic-shop/assets/sprite-BXPgZ1d3.svg#icon-x"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item"><a href="#how" class="mobile-menu-link curr-page">How It Works</a></li>
+        <li class="mobile-menu-item"><a href="#vegetables" class="mobile-menu-link">Vegetables</a></li>
+        <li class="mobile-menu-item"><a href="#reviews" class="mobile-menu-link">Reviews</a></li>
+      </ul>
+      <a href="#order" class="mobile-order-link">Shop now</a>
+    </div>
+  </div>
+  </div>
 </header>
 
     <main>
@@ -66,7 +83,7 @@
 </section>
 <!-- Section Hero -->
 
-      <section class="section-works">
+      <section class="section-works" id="how">
   <div class="work-box">
     <div class="container-img">
       <picture>
@@ -144,7 +161,7 @@
   </div>
 </section>
 
-      <section class="organic">
+      <section class="organic" id="vegetables">
   <div class="container">
     <div class="organic-title">
       <h2 class="section-organic-title">
@@ -317,7 +334,7 @@
   </div>
 </section>
 
-      <section class="reviews container">
+      <section class="reviews container" id="reviews">
     <div class="reviews-container">
       <div class="reviews-title-container">
         <h2 class="reviews-title">
