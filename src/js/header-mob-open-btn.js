@@ -5,21 +5,26 @@
     menu: document.querySelector('[data-mobile-menu]'),
   };
 
-  refs.openMenuBtn.addEventListener('click', toggleModal);
-  refs.closeMenuBtn.addEventListener('click', toggleModal);
+  // Открытие/закрытие мобильного меню
+  refs.openMenuBtn.addEventListener('click', toggleMenu);
+  refs.closeMenuBtn.addEventListener('click', toggleMenu);
 
-  function toggleModal() {
+  function toggleMenu() {
     refs.menu.classList.toggle('is-open');
   }
 
+  // Закрытие мобильного меню при клике на ссылки
   document.addEventListener('DOMContentLoaded', function () {
     const menuLinks = document.querySelectorAll('.mobile-menu-link');
-    const targetDiv = document.querySelector('.mobile-menu');
-
     menuLinks.forEach(link => {
       link.addEventListener('click', function () {
-        targetDiv.classList.remove('is-open');
+        refs.menu.classList.remove('is-open');
       });
     });
   });
+
+  // Делаем функцию глобальной
+  window.closeMobileMenu = function () {
+    refs.menu.classList.remove('is-open');
+  };
 })();
